@@ -7,7 +7,7 @@ e-pass. As framework was used Angular and for styles Bootstrap.
 
 If you want to run and interract with it, do the following steps:
 ```
-git clone https://github.com/stamosromas/Software-Engineer-Project
+git clone https://github.com/stamosromas/Software-Engineer-Project.git
 cd TL21-68\Front-end
 npm install (or npm i)
 ng serve
