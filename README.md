@@ -16,3 +16,11 @@ ng serve
 Unit test is done in Sign-In component.
 
 For End-to-End testing is used cypress library.
+
+All dummy-data that exist are in the following folder:
+```
+  Project\Front-end\src\assets
+```
+
+In this folder ,images are used for background and carsPasswords.ts
+contain all dummy-accounts that are consisted from username and password.
