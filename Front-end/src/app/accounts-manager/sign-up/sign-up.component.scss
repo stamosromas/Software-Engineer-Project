@@ -1,0 +1,26 @@
+// body {
+//     background: url('../../../assets/tolls.JPG') repeat center center fixed;
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     -o-background-size: cover;
+//     background-size: cover;
+
+//   }
+
+//   .form-control.ng-touched.ng-invalid {
+//     border:1px solid red;
+//    }
+//    .form-control.ng-touched.ng-valid {
+//     border:1px solid green;
+//    }
+   
+
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}

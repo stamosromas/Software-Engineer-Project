@@ -1,0 +1,66 @@
+<img src="../../../assets/tolls.JPG" id="bg" alt="" />
+<section class="vh-100 bg-image">
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div
+        class="row d-flex justify-content-center align-items-center h-100"
+        style="margin-top: 5px"
+      >
+        <div class="col-12 col-md-10 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5 display-4">
+                Sign in to your Account
+              </h2>
+
+              <form>
+                <div class="form-outline mb-4">
+                  <input
+                    type="text"
+                    id="form3Example1cg"
+                    class="form-control form-control-lg bi bi-person"
+                    [formControl]="username"
+                  />
+                  <label class="form-label" for="form3Example1cg" id="username"
+                    >Username</label
+                  >
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input
+                    type="password"
+                    id="form3Example4cg"
+                    class="form-control form-control-lg"
+                    [formControl]="password"
+                  />
+                  <label class="form-label" for="form3Example4cg" id="password"
+                    >Enter your password</label
+                  >
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <button
+                    [disabled]="!canSubmit()"
+                    type="button"
+                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
+                    (click)="onSubmit()"
+                    id="submit-button"
+                  >
+                    Connect
+                  </button>
+                </div>
+
+                <p class="text-center text-muted mt-5 mb-0">
+                  Forgot your password?
+                  <a href="/reset-password" class="fw-bold text-body"
+                    ><u>Reset password here.</u></a
+                  >
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

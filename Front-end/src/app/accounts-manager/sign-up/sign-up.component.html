@@ -1,0 +1,81 @@
+<img src='../../../assets/tolls.JPG' id="bg" alt="">
+<section class="vh-100 bg-image">
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100"  style="margin-top: 30px;">
+        <div class="col-12 col-md-10 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5 display-4">Create Toll Account</h2>
+
+              <form>
+
+                <div class="form-outline mb-4">
+                  <input type="text" id="form3Example1cg" class="form-control form-control-lg" [formControl]="username"/>
+                  <label class="form-label" for="form3Example1cg">Username</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="email" id="form3Example3cg" class="form-control form-control-lg" [formControl]="email"/>
+                  <label class="form-label" for="form3Example3cg">Enter your email</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="password" id="form3Example4cg" class="form-control form-control-lg" [formControl]="password"/>
+                  <label class="form-label" for="form3Example4cg">Enter your password</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="password" id="form3Example4cdg" class="form-control form-control-lg" [formControl]="repeatPassword"/>
+                  <label class="form-label" for="form3Example4cdg">Repeat your password</label>
+                </div>
+
+                <select
+                  name="tolls"
+                  id="tolls"
+                  placeholder="Select Toll Companny"
+                  [formControl]="tollCompany"
+                  class="form-select"
+                  
+                >
+                  <option value="" disabled selected>
+                    Select Toll Companny
+                  </option>
+                  <option value="aodos.gr">aodos.gr</option>
+                  <option value="gefyra.gr">gefyra.gr</option>
+                  <option value="egnatia.eu">egnatia.eu</option>
+                  <option value="kentrikiodos.gr">kentrikiodos.gr</option>
+                  <option value="moreas.com.gr">moreas.com.gr</option>
+                  <option value="neaodos.gr">neaodos.gr</option>
+                  <option value="olympiaodos.gr">olympiaodos.gr</option>
+                </select>
+
+                <div class="form-check d-flex justify-content-center mb-5" >
+                  <input
+                    class="form-check-input me-2"
+                    type="checkbox"
+                    value=""
+                    id="form2Example3cg"
+                    [formControl]="agreement"
+      
+                  />
+                  <label class="form-check-label" for="form2Example3g">
+                    I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+                  </label>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <button [disabled]="!canSubmit()" type="button" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" (click)="onSubmit()">Register</button>
+                </div>
+
+                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="/sign-in" class="fw-bold text-body"><u>Login here</u></a></p>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
